@@ -1,0 +1,12 @@
+apiVersion: platform.kratix.io/v1alpha1
+kind: GitStateStore
+metadata:
+  name: platform-gitops
+  namespace: default
+spec:
+  authMethod: basicAuth
+  url: https://github.com/VamsiKrish82/platform-gitops
+  branch: main
+  secretRef:
+    name: git-credentials
+    namespace: default

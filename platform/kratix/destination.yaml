@@ -1,0 +1,12 @@
+apiVersion: platform.kratix.io/v1alpha1
+kind: Destination
+metadata:
+  name: platform-cluster
+  namespace: default
+  labels:
+    environment: platform
+spec:
+  stateStoreRef:
+    name: platform-gitops
+    kind: GitStateStore
+  path: workloads
