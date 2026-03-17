@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: platform-project
   description: "GCP Project platform-project-2a04 for team alpha (prod)"
