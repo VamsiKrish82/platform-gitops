@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gcp-project-backstage-platform
+  namespace: platform-system
+  labels:
+    platform.myorg.io/type: gcp-project
+    platform.myorg.io/team: platform
+data:
+  projectId: "backstage-platform-f417"
+  projectNumber: "696497703005"
+  environment: "prod"
+  team: "platform"
