@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: platform-services
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/VamsiKrish82/platform-gitops
+    targetRevision: main
+    path: workloads
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
