@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gcp-project-platform-project
+  namespace: platform-system
+  labels:
+    platform.myorg.io/type: gcp-project
+    platform.myorg.io/team: alpha
+data:
+  projectId: "platform-project-2a04"
+  projectNumber: "880019929186"
+  environment: "prod"
+  team: "alpha"
