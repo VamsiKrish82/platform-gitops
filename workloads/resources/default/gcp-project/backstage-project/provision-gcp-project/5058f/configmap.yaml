@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gcp-project-backstage-project
+  namespace: platform-system
+  labels:
+    platform.myorg.io/type: gcp-project
+    platform.myorg.io/team: alpha
+data:
+  projectId: "backstage-project-3d4f"
+  projectNumber: "25093431101"
+  environment: "dev"
+  team: "alpha"

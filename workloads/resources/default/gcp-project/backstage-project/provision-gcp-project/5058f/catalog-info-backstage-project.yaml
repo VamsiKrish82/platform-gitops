@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: backstage-project
+  description: "GCP Project backstage-project-3d4f for team alpha (dev)"
+  annotations:
+    google.com/project-id: "backstage-project-3d4f"
+    google.com/project-number: "25093431101"
+  tags:
+    - gcp
+    - alpha
+    - dev
+  links:
+    - url: "https://console.cloud.google.com/home/dashboard?project=backstage-project-3d4f"
+      title: "GCP Console"
+      icon: cloud
+spec:
+  type: gcp-project
+  owner: group:alpha
+  lifecycle: production
