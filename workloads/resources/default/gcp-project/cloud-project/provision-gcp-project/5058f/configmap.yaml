@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gcp-project-cloud-project
+  namespace: platform-system
+  labels:
+    platform.myorg.io/type: gcp-project
+    platform.myorg.io/team: gamma
+data:
+  projectId: "cloud-project-bca1"
+  projectNumber: "1058202423416"
+  environment: "prod"
+  team: "gamma"

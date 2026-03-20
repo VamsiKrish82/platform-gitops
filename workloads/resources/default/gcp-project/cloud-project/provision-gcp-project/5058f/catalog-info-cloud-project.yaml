@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cloud-project
+  description: "GCP Project cloud-project-bca1 for team gamma (prod)"
+  annotations:
+    google.com/project-id: "cloud-project-bca1"
+    google.com/project-number: "1058202423416"
+  tags:
+    - gcp
+    - gamma
+    - prod
+  links:
+    - url: "https://console.cloud.google.com/home/dashboard?project=cloud-project-bca1"
+      title: "GCP Console"
+      icon: cloud
+spec:
+  type: gcp-project
+  owner: group:gamma
+  lifecycle: production
