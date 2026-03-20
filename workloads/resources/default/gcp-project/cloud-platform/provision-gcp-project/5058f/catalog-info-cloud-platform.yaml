@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: cloud-platform
+  description: "GCP Project cloud-platform-2f1d for team alpha (dev)"
+  annotations:
+    google.com/project-id: "cloud-platform-2f1d"
+    google.com/project-number: "151303392630"
+  tags:
+    - gcp
+    - alpha
+    - dev
+  links:
+    - url: "https://console.cloud.google.com/home/dashboard?project=cloud-platform-2f1d"
+      title: "GCP Console"
+      icon: cloud
+spec:
+  type: gcp-project
+  owner: group:alpha
+  lifecycle: production
